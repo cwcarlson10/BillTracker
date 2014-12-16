@@ -1,0 +1,8 @@
+<h1>Bill</h1>
+<p><%= @bill.title %></p>
+<p><%= @bill.due_at %></p>
+<p><%= @bill.amount %></p>
+<p><%= @bill.is_paid %></p>
+<%= link_to 'Back', root_path %>
+<%= link_to 'Edit', edit_bill_path %>
+<%= link_to 'Delete', bill_path(@bill.id), method: :delete, data: { confirm: 'Are you sure?' } %>
